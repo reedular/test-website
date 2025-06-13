@@ -103,28 +103,28 @@ img {
   margin-bottom: 20px;
 }
 
-/* FAQ */
-.faq {
+/* Accordion */
+.accordion {
   padding: 40px 0;
 }
 
-.faq .faq-group {
+.accordion .accordion-group {
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
 }
 
-.faq .faq-group .faq-group-header {
+.accordion .accordion-group .accordion-group-header {
   padding: 20px 0;
   margin-bottom: 15px;
   position: relative;
 }
 
-.faq .faq-group .faq-group-header h4 {
+.accordion .accordion-group .accordion-group-header h4 {
   font-weight: 600;
   width: 95%;
 }
 
-.faq .faq-group .faq-group-header i {
+.accordion .accordion-group .accordion-group-header i {
   position: absolute;
   right: 0;
   top: 35px;
@@ -132,15 +132,15 @@ img {
   cursor: pointer;
 }
 
-.faq .faq-group .faq-group-body {
+.accordion .accordion-group .accordion-group-body {
   display: none;
 }
 
-.faq .faq-group .faq-group-body.open {
+.accordion .accordion-group .accordion-group-body.open {
   display: block;
 }
 
-.faq ul.faq-menu {
+.accordion ul.accordion-menu {
   max-width: 400px;
   margin: auto;
   display: flex;
@@ -153,13 +153,13 @@ img {
   cursor: pointer;
 }
 
-.faq ul.faq-menu li {
+.accordion ul.accordion-menu li {
   padding: 10px 20px;
   border-radius: 5px;
   text-align: center;
 }
 
-.faq ul.faq-menu li.active {
+.accordion ul.accordion-menu li.active {
   background: var(--primary-color);
   color: #fff;
 }

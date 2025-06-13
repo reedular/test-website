@@ -1,14 +1,14 @@
-// FAQ Accordion
+// Accordion logic
 document.addEventListener('DOMContentLoaded', () => {
-  const faqContainer = document.querySelector('.faq-content');
+  const accordionContainer = document.querySelector('.accordion-content');
 
-  faqContainer.addEventListener('click', (e) => {
-    const groupHeader = e.target.closest('.faq-group-header');
+  accordionContainer.addEventListener('click', (e) => {
+    const groupHeader = e.target.closest('.accordion-group-header');
 
     if (!groupHeader) return;
 
     const group = groupHeader.parentElement;
-    const groupBody = group.querySelector('.faq-group-body');
+    const groupBody = group.querySelector('.accordion-group-body');
     const icon = groupHeader.querySelector('i');
 
     // Toggle icon
@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
     groupBody.classList.toggle('open');
 
     // Close other open group bodies
-    const otherGroups = faqContainer.querySelectorAll('.faq-group');
+    const otherGroups = accordionContainer.querySelectorAll('.accordion-group');
     otherGroups.forEach((otherGroup) => {
       if (otherGroup != group) {
-        const otherGroupBody = otherGroup.querySelector('.faq-group-body');
-        const otherGroupIcon = otherGroup.querySelector('.faq-group-header i');
+        const otherGroupBody = otherGroup.querySelector('.accordion-group-body');
+        const otherGroupIcon = otherGroup.querySelector('.accordion-group-header i');
 
         otherGroupBody.classList.remove('open');
         otherGroupIcon.classList.remove('fa-minus');
