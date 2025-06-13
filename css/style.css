@@ -7,7 +7,7 @@
 /* Custom vars */
 :root {
   --primary-color: #4891ff;
-  --light-color: #dddde0;
+  --light-color: #d6d6da;
   --dark-color: #111;
 }
 
@@ -19,8 +19,15 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: #333;
+  color: var(--dark-color);
+}
+
+p a {
+  transition: 0.5s;
+}
+
+p a:hover {
+  color: var(--primary-color);
 }
 
 ul {
@@ -32,9 +39,10 @@ img {
 }
 
 /* Navbar */
+/* Padding order is top left/right bottom */
 .navbar {
   background: var(--primary-color);
-  padding: 5px 20px 0;
+  padding: 20px 20px 10px;
 }
 
 .navbar .container {
@@ -52,6 +60,8 @@ img {
   display: block;
   font-weight: 600;
   transition: 0.5s;
+  text-decoration: none;
+  color: #fff;
 }
 
 .navbar ul li a:hover {
@@ -62,23 +72,23 @@ img {
   margin-right: 10px;
 }
 
-/* Hero */
-.hero {
+/* Greeting main page */
+.greeting {
   margin-bottom: 50px;
 }
 
-.hero .container {
+.greeting .container {
   background: url(../images/hero-bg.jpg) no-repeat;
   background-size: contain;
   background-position: center bottom;
   height: 550px;
 }
 
-.hero .hero-content {
+.greeting .greeting-content {
   width: 70%;
 }
 
-.hero .hero-text {
+.greeting .greeting-text {
   width: 70%;
   margin-bottom: 20px;
 }
