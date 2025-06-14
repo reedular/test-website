@@ -114,8 +114,8 @@ img {
 }
 
 .accordion .accordion-group .accordion-group-header {
-  padding: 20px 0;
-  margin-bottom: 15px;
+  padding: 20px 0 10px;
+  margin-bottom: 0;
   position: relative;
 }
 
@@ -140,6 +140,11 @@ img {
   display: block;
 }
 
+.accordion .accordion-group .accordion-group-body h4 a:hover {
+  color: var(--primary-color);
+  transition: 0.8s;
+}
+
 .accordion ul.accordion-menu {
   max-width: 400px;
   margin: auto;
@@ -162,6 +167,11 @@ img {
 .accordion ul.accordion-menu li.active {
   background: var(--primary-color);
   color: #fff;
+}
+
+.accordion ul li a:hover {
+  color: var(--primary-color);
+  transition: 0.8s;
 }
 
 /* Utility classes */
