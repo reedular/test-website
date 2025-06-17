@@ -113,6 +113,10 @@ img {
   padding-bottom: 20px;
 }
 
+.accordion .accordion-group:first-of-type {
+  border-top: 1px solid #ccc;
+}
+
 .accordion .accordion-group .accordion-group-header {
   padding: 20px 0 10px;
   margin-bottom: 0;
@@ -254,6 +258,15 @@ img {
   line-height: 1.4;
   font-weight: normal;
   margin: 10px 0 5px;
+}
+
+.text-sm-italic {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+  font-style: italic;
+  padding-bottom: 20px;
 }
 
 .text-center {
