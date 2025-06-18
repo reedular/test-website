@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   accordionContainer.addEventListener('click', (e) => {
     const groupHeader = e.target.closest('.accordion-group-header');
-
+    console.log(groupHeader);
     if (!groupHeader) return;
 
     const group = groupHeader.parentElement;
