@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		const activitySelected = e.target.closest('.menu-option');
 		if (!activitySelected) return;
 
+		if (activitySelected.classList.contains('active')) return;
+
 		// toggle which menu item is actively selected
 		activitySelected.classList.toggle('active');
 
