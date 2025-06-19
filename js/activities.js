@@ -25,33 +25,26 @@ document.addEventListener('DOMContentLoaded', () => {
 		const activitiesContent = document.querySelector('.activities-content');
 		let selectedGroup = null;
 		switch (activityName) {
-			case 'Variety':
-				selectedGroup = activitiesContent.querySelector('.variety');
-				console.log(selectedGroup);
-				break;
 			case 'Bookstores':
 				selectedGroup = activitiesContent.querySelector('.bookstores');
-				console.log(selectedGroup);
 				break;
 			case 'Outdoors':
 				selectedGroup = activitiesContent.querySelector('.outdoors');
-				console.log(selectedGroup);
 				break;
 			case 'Theater':
 				selectedGroup = activitiesContent.querySelector('.theater');
-				console.log(selectedGroup);
 				break;
 			case 'Restaurants':
 				selectedGroup = activitiesContent.querySelector('.restaurants');
-				console.log(selectedGroup);
 				break;
 			case 'Museums':
 				selectedGroup = activitiesContent.querySelector('.museums');
-				console.log(selectedGroup);
 				break;
 			case 'Movies':
 				selectedGroup = activitiesContent.querySelector('.movies');
-				console.log(selectedGroup);
+				break;
+			case 'Variety':
+				selectedGroup = activitiesContent.querySelector('.variety');
 				break;
 			default:
 				break;

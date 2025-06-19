@@ -170,6 +170,7 @@ img {
 
 .activities .activities-group {
   display: none;
+  margin-left: 20px;
 }
 
 .activities .activities-group.open {
@@ -203,6 +204,29 @@ img {
 .activities ul li a:hover {
   color: var(--primary-color);
   transition: 0.8s;
+}
+
+.list-pair {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.list-pair ul {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex-wrap: nowrap;
+  flex: 1;
+}
+
+.list-pair ul li {
+  flex-wrap: wrap;
+}
+
+.first-list {
+  padding-right: 5.0rem;
 }
 
 /* Utility classes */
