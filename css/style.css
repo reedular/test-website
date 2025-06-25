@@ -20,6 +20,7 @@ body {
 
 a {
   color: var(--dark-color);
+  transition: 0.5s;
 }
 
 p a {
@@ -160,12 +161,20 @@ img {
 }
 
 .activities .activities-group .activities-group-header {
-  padding: 20px 0;
+  padding: 20px 0 5px;
   position: relative;
 }
 
 .activities .activities-group .activities-group-header h4 {
   font-weight: 600;
+}
+
+.activities .activities-group .activities-group-body h4 a {
+  transition: 0.5s;
+}
+
+.activities .activities-group .activities-group-body h4 a:hover {
+  color: var(--primary-color);
 }
 
 .activities .activities-group {
