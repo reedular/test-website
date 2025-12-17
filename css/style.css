@@ -49,6 +49,10 @@ img {
   max-width: 100%;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 /* Navbar */
 /* Padding order is top left/right bottom */
 .navbar {
@@ -215,6 +219,14 @@ img {
   transition: 0.8s;
 }
 
+.restaurants .activities-group-body h4.text-md {
+  margin-bottom: 0px;
+}
+
+.restaurants .activities-group-body p.text-sm {
+  margin: 5px 0px;
+}
+
 .list-pair {
   display: flex;
   flex-direction: row;
@@ -242,7 +254,7 @@ img {
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 40px;
 }
 
 .container-sm {
